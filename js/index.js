@@ -39,7 +39,7 @@ function displayRepositories() {
 function getCommits(element){
   const repoName = element.dataset.repository
   const uri = rootURL + '/repos/' + element.dataset.username + '/' + repoName + '/commits';
-  const req = new XMLHttpRequest();
+  const request = new XMLHttpRequest();
   request.addEventListener('load', displayCommits);
   request.open('GET', uri);
   request.send();
