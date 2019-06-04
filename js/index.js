@@ -40,9 +40,9 @@ function getCommits(element){
   const repoName = element.dataset.repository
   const uri = rootURL + '/repos/' + element.dataset.username + '/' + repoName + '/commits';
   const req = new XMLHttpRequest();
-  req.addEventListener('load', displayCommits);
-  req.open('GET', uri);
-  req.send();
+  request.addEventListener('load', displayCommits);
+  request.open('GET', uri);
+  request.send();
 }
 
 function displayCommits() {
@@ -66,10 +66,10 @@ function displayCommits() {
 function getBranches(element){
   const repoName = element.dataset.repository
   const uri = rootURL + '/repos/' + element.dataset.username + '/' + repoName + '/branches'
-  const req = new XMLHttpRequest();
-  req.addEventListener('load', displayBranches);
-  req.open('GET', uri);
-  req.send();
+  const request = new XMLHttpRequest();
+  request.addEventListener('load', displayBranches);
+  request.open('GET', uri);
+  request.send();
 }
 
 function displayBranches(){
