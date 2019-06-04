@@ -1,4 +1,8 @@
 // your code here
+
+const rootURL = 'https://api.github.com';
+
+
 function retrieveGithubUsername(){
   return document.getElementById('username').value
 }
