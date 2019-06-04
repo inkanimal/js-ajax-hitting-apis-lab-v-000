@@ -2,3 +2,4 @@
 function retrieveGithubUsername(){
   return document.getElementById('username').value
 }
+
